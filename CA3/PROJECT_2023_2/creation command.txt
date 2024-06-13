@@ -1,0 +1,57 @@
+https://www.youtube.com/watch?v=qVHO3HRDoEU
+https://themewagon.com/
+laravel new laravel2030
+cd laravel2030
+composer require laravel/ui 
+php artisan ui bootstrap --auth
+npm install 
+npm run dev /  npm run build (10)  /  npm install laravel-mix --save-dev
+
+mkdir my-app && cd my-app
+npm init -y
+npm install laravel-mix --save-dev
+cp node_modules/laravel-mix/setup/webpack.mix.js ./
+
+
+
+php artisan migrate
+
+
+----------------------------------------------------------------------
+npm install laravel-mix --save-dev
+npx mix
+
+
+
+-------------------------------------------------------------------------------------------------------------
+composer require laravel/breeze --dev
+
+php artisan breeze:install
+ 
+php artisan migrate
+npm install
+npm run dev
+
+---------------------------------------------------------------------------------------------------------------
+
+php artisan migrate:fresh
+php artisan make:seeder UserSeeder
+php artisan db:seed
+php artisan make:controller Admin/AdminController
+php artisan make:middleware RoleMiddleware
+php artisan bookings:delete-expired
+
+
+
+php artisan make:migration create_categories_table
+php artisan make:model Category
+php artisan migrate --path=/database/migrations/2023_11_07_160817_create_categories_table.php
+
+dd($request->all());
+41459944
+
+
+available or not in both category and faclity
+startdate enddate
+
+https://code-gpt-docs.vercel.app/?utm_source=findmyaitool&utm_medium=marketplace&utm_campaign=findmyaitool

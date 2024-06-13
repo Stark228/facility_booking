@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-icon/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/vendor/libs/animate-css/animate.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/sweetalert2/sweetalert2.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/nav_style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <button class="sidebar-collapse-mini d-xl-none d-block"><i class="bi bi-list"></i></button>
+        <!-- main sidebar -->
+        <div class="fixed-sidebar sidebar-mini">
+            <div class="logo"> 
+                <a href="index.php"><img src="assets/images/gc1-blue.png" alt="LOGO" style="max-width: 60%;"></a>
+                <button class="sidebar-collapse"><i class="bi bi-list"></i></button>
+                
+            </div>
+            <!-- sidebar menu 3a84b983 -->
+            <div class="menu">
+                <div class="custom-scroll">
+                    <div class="sidebar-menu">
+                        <ul>
+                        <li class="sidebar-title"><span>Menu</span></li>
+                            <li class="sidebar-item"><a href="index.php" class="sidebar-link" data-bs-toggle="tooltip" data-bs-placement="right" title="Dashboard" tabindex="0"><i class="bi bi-grid"></i> <span>Dashboard</span></a></li>
+                            <li class="sidebar-item"><a href="facilities.php" class="sidebar-link" data-bs-toggle="tooltip" data-bs-placement="right" title="Facilities" tabindex="0"><i class="bi bi-bullseye"></i> <span>Facilities</span></a></li>
+                            <li class="sidebar-item"><a href="booking.php" class="sidebar-link" data-bs-toggle="tooltip" data-bs-placement="right" title="Bookings" tabindex="0"><i class="bi bi-bookmark"></i> <span>Bookings</span></a></li>
+                            <li class="sidebar-item"><a href="user.php" class="sidebar-link active" data-bs-toggle="tooltip" data-bs-placement="right" title="Users" tabindex="0"><i class="bi bi-person-circle"></i> <span>Users</span></a></li>
+                            <li class="sidebar-item"><a href="feedback.php" class="sidebar-link " data-bs-toggle="tooltip" data-bs-placement="right" title="Feedbacks" tabindex="0"><i class="bi bi-chat-left"></i> <span>Feedbacks</span></a></li>
+                            <li class="sidebar-item"><a href="setting.php" class="sidebar-link" data-bs-toggle="tooltip" data-bs-placement="right" title="Setting" tabindex="0"><i class="bi bi-gear"></i> <span>Setting</span></a></li>
+                            <li class="sidebar-item"><a href="#" class="sidebar-link" data-bs-toggle="tooltip" data-bs-placement="right" tabindex="0"><i class="bi bi-box-arrow-right"></i> <span>Logout</span></a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar menu -->
+        </div>
+        <!-- main sidebar -->
+        <div class="main-content">
+            <div class="breadcrumb-wrap mb-20">
+                <div class="d-md-flex d-block justify-content-between align-items-center">
+                    <div class="left pt-20">
+                        <h1>Users</h1>
+                    </div>
+                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" style="background-color: green !important; border-color: green !important">Add</button>
+                    <button type="button" class="btn btn-danger btn-sm" >Delete</button>
+                </div>
+            </div>
+
+            <div class="row g-10">
+                
+
+                
+
+                <div class="panel mb-10 mt-10">
+                <div class="col-xl-12 col-lg-12">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                  <tr>
+                                    <th>
+                                      <span class="custom-checkbox">
+                                                        <input type="checkbox" id="selectAll">
+                                                        <label for="selectAll"></label>
+                                                    </span>
+                                    </th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Role</th>
+                                    <th>Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <span class="custom-checkbox">
+                                              <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                              <label for="checkbox1"></label>
+                                                    </span>
+                                    </td>
+                                    <td>Bir</td>
+                                    <td>12039453.gcit@rub.edu.bt
+                                    </td>
+                                    <td>RC</td>
+                                    
+                                    <td>
+                                  
+                                      <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                            <i class="bi bi-trash" data-toggle="tooltip" title="Delete"></i></a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <span class="custom-checkbox">
+                                              <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                              <label for="checkbox1"></label>
+                                                    </span>
+                                    </td>
+                                    <td>Domtu</td>
+                                    <td>12039103.gcit@rub.edu.bt
+                                    </td>
+                                    <td>CR</td>
+                                    
+                                    <td>
+                                  
+                                      <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                            <i class="bi bi-trash" data-toggle="tooltip" title="Delete"></i></a>
+                                    </td>
+                                  </tr>
+                                  
+                                   
+                                    
+                                  
+                                </tbody>
+                                </table>
+                        </div>
+                    </div>
+                </div>
+                    
+                </div>
+
+                <!-- <div class="row g-2 mb-3">
+                    <div class="col-xxl-3 col-lg-4 col-sm-6">
+                        <div class="card border" style="border-radius: 10px;">
+                            <div class="panel-body">
+                                <div class="card text-white">
+                                    <img src="assets/images/Sports 1.png" class="card-img" alt="card image">
+                                    <div class="card-img-overlay">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <div class="text-center">
+                                            <h5 class="card-title">Sports</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-4 col-sm-6">
+                        <div class="card border" style="border-radius: 10px;">
+                            <div class="panel-body">
+                                <div class="card text-white">
+                                    <img src="assets/images/MPH 1.png" class="card-img" alt="card image">
+                                    <div class="card-img-overlay">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <div class="text-center">
+                                            <h5 class="card-title">MPH</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-4 col-sm-6">
+                        <div class="card border" style="border-radius: 10px;">
+                            <div class="panel-body">
+                                <div class="card text-white">
+                                    <img src="assets/images/Guest house 1.png" class="card-img" alt="card image">
+                                    <div class="card-img-overlay">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <div class="text-center">
+                                            <h5 class="card-title">Guest House</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-4 col-sm-6">
+                        <div class="card border" style="border-radius: 10px;">
+                            <div class="panel-body">
+                                <div class="card text-white">
+                                    <img src="assets/images/ConferenceRoom 1.png" class="card-img" alt="card image">
+                                    <div class="card-img-overlay">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <div class="text-center">
+                                            <h5 class="card-title">Conference Room</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-4 col-sm-6">
+                        <div class="card border" style="border-radius: 10px;">
+                            <div class="panel-body">
+                                <div class="card text-white">
+                                    <img src="assets/images/Transportation 1.png" class="card-img" alt="card image">
+                                    <div class="card-img-overlay">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <div class="text-center">
+                                            <h5 class="card-title">Transportation</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div> -->
+
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/apexcharts.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/chart-init.js"></script>
+</body>
+</html>

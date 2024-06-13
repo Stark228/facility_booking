@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-icon/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/vendor/libs/animate-css/animate.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/sweetalert2/sweetalert2.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <button class="sidebar-collapse-mini d-xl-none d-block"><i class="bi bi-list"></i></button>
+        <!-- main sidebar -->
+        <div class="fixed-sidebar sidebar-mini">
+            <div class="logo"> 
+                <a href="index.php"><img src="assets/images/gc1-blue.png" alt="LOGO" style="max-width: 60%;"></a>
+                <button class="sidebar-collapse"><i class="bi bi-list"></i></button>
+                
+            </div>
+            <!-- sidebar menu 3a84b983 -->
+            <div class="menu">
+                <div class="custom-scroll">
+                    <div class="sidebar-menu">
+                        <ul>
+                            <li class="sidebar-title"><span>Menu</span></li>
+                            <li class="sidebar-item"><a href="index.php" class="sidebar-link active" data-bs-toggle="tooltip" data-bs-placement="right" title="Dashboard" tabindex="0"><i class="bi bi-grid"></i> <span>Dashboard</span></a></li>
+                            <li class="sidebar-item"><a href="facilities.php" class="sidebar-link" data-bs-toggle="tooltip" data-bs-placement="right" title="Facilities" tabindex="0"><i class="bi bi-bullseye"></i> <span>Facilities</span></a></li>
+                            <li class="sidebar-item"><a href="booking.php" class="sidebar-link" data-bs-toggle="tooltip" data-bs-placement="right" title="Bookings" tabindex="0"><i class="bi bi-bookmark"></i> <span>Bookings</span></a></li>
+                            <li class="sidebar-item"><a href="user.php" class="sidebar-link" data-bs-toggle="tooltip" data-bs-placement="right" title="Users" tabindex="0"><i class="bi bi-person-circle"></i> <span>Users</span></a></li>
+
+                            <li class="sidebar-item"><a href="feedback.php" class="sidebar-link" data-bs-toggle="tooltip" data-bs-placement="right" title="Feedbacks" tabindex="0"><i class="bi bi-chat-left"></i> <span>Feedbacks</span></a></li>
+                            <li class="sidebar-item"><a href="setting.php" class="sidebar-link" data-bs-toggle="tooltip" data-bs-placement="right" title="Setting" tabindex="0"><i class="bi bi-gear"></i> <span>Setting</span></a></li>
+                            <li class="sidebar-item"><a href="logout.php" class="sidebar-link" data-bs-toggle="tooltip" data-bs-placement="right" tabindex="0"><i class="bi bi-box-arrow-right"></i> <span>Logout</span></a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar menu -->
+        </div>
+        <!-- main sidebar -->
+        <div class="main-content">
+            <div class="breadcrumb-wrap mb-20">
+                <div class="d-md-flex d-block justify-content-between align-items-center">
+                    <div class="left pt-20">
+                        <h1>Dashboard</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-10">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/all facility 1.png" class="d-block w-100" alt="slide image">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>All Facilities</h5>
+                                            <h3>25</h3>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/all category.png" class="d-block w-100" alt="slide image">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>All Category</h5>
+                                            <h3>5</h3>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/all booking.png" class="d-block w-100" alt="slide image">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Recent Bookings</h5>
+                                            <h3>7</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6">
+                    <div class="panel mb-10">
+                        <div class="panel-heading">
+                            <span>Recent Bookings</span>
+                           <a href="booking.php"> <button type="button" class="btn btn-outline-primary" >View more</button> </a>                       </div>
+                        <div class="panel-body">
+                            <div class="list-group">
+                                <!-- <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <p class="mb-1">12200051.gcit@rub.edu.bt</p>
+                                        <small>3 days ago</small>
+                                    </div>
+                                    <p class="mb-1">Football Ground</p>
+                                </a> -->
+                                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <p class="mb-1">12200051.gcit@rub.edu.bt</p>
+                                        <!-- <small>3 days ago</small> -->
+                                    </div>
+                                    <p class="mb-1">Football Ground</p>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <p class="mb-1">12200051.gcit@rub.edu.bt</p>
+                                        <!-- <small class="text-muted">3 days ago</small> -->
+                                    </div>
+                                    <p class="mb-1">Football Ground</p>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <p class="mb-1">2200051.gcit@rub.edu.bt</p>
+                                        <!-- <small class="text-muted">3 days ago</small> -->
+                                    </div>
+                                    <p class="mb-1">Football Ground</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel col-xl-12 col-lg-12 mb-10 mt-10">
+                    <div class="panel-heading">
+                        <span>Category</span>
+                        <!-- <div>
+                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" style="background-color: green !important; border-color: green !important">Add</button>
+                            <button type="button" class="btn btn-danger btn-sm" >Delete</button>
+                            
+                        </div> -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalCenterLabel">Add Category</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group mb-20">
+                                                <label class="form-label" for="exampleInputEmail1">Category name</label>
+                                                <input type="text" class="form-control" id="exampleInputTexts">
+                                            </div>
+                                            
+                                            <div class="form-group mb-20">
+                                                <label class="form-label" for="exampleInputFile">Upload image</label>
+                                                <input class="form-control" type="file" id="exampleInputFile">
+                                            </div>
+                                            
+                                        </form>                                    
+                                    </div>
+                                    <div class="modal-footer">
+                                        <!-- <a href="#">
+                                            <button type="button" class="btn btn-primary">Save</button>
+                                        </a> -->
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="row g-2 mb-3">
+                    <div class="col-xxl-3 col-lg-4 col-sm-6">
+                        <div class="card border" style="border-radius: 10px;">
+                            <!-- <div class="card-header">Header</div> -->
+                            <div class="panel-body">
+                                <div class="card text-white">
+                                    <img src="assets/images/Sports 1.png" class="card-img" alt="card image">
+                                    <div class="card-img-overlay">
+                                        <div class="text-center">
+                                            <h5 class="card-title">Sports</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-4 col-sm-6">
+                        <div class="card border" style="border-radius: 10px;">
+                            <!-- <div class="card-header">Header</div> -->
+                            <div class="panel-body">
+                                <div class="card text-white">
+                                    <img src="assets/images/MPH 1.png" class="card-img" alt="card image">
+                                    <div class="card-img-overlay">
+                                        <div class="text-center">
+                                            <h5 class="card-title">MPH</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-4 col-sm-6">
+                        <div class="card border" style="border-radius: 10px;">
+                            <!-- <div class="card-header">Header</div> -->
+                            <div class="panel-body">
+                                <div class="card text-white">
+                                    <img src="assets/images/Guest house 1.png" class="card-img" alt="card image">
+                                    <div class="card-img-overlay">
+                                        <div class="text-center">
+                                            <h5 class="card-title">Guest House</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-4 col-sm-6">
+                        <div class="card border" style="border-radius: 10px;">
+                            <!-- <div class="card-header">Header</div> -->
+                            <div class="panel-body">
+                                <div class="card text-white">
+                                    <img src="assets/images/ConferenceRoom 1.png" class="card-img" alt="card image">
+                                    <div class="card-img-overlay">
+                                        <div class="text-center">
+                                            <h5 class="card-title">Conference Room</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-4 col-sm-6">
+                        <div class="card border" style="border-radius: 10px;">
+                            <!-- <div class="card-header">Header</div> -->
+                            <div class="panel-body">
+                                <div class="card text-white">
+                                    <img src="assets/images/Transportation 1.png" class="card-img" alt="card image">
+                                    <div class="card-img-overlay">
+                                        <div class="text-center">
+                                            <h5 class="card-title">Transportation</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/apexcharts.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/chart-init.js"></script>
+</body>
+</html>
